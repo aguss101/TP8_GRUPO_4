@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\agusp\\Downloads\\Git\\TP8_GRUPO_4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{93C34AEA-AB40-4CCB-8EC7-6DED5963B68F}|Vistas\\Vistas.csproj|c:\\users\\agusp\\downloads\\git\\tp8_grupo_4\\vistas\\agregarsucursal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{93C34AEA-AB40-4CCB-8EC7-6DED5963B68F}|Vistas\\Vistas.csproj|solutionrelative:vistas\\agregarsucursal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{93C34AEA-AB40-4CCB-8EC7-6DED5963B68F}|Vistas\\Vistas.csproj|c:\\users\\agusp\\downloads\\git\\tp8_grupo_4\\vistas\\aspx\\listadodesucursales.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{93C34AEA-AB40-4CCB-8EC7-6DED5963B68F}|Vistas\\Vistas.csproj|solutionrelative:vistas\\aspx\\listadodesucursales.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,14 +31,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AgregarSucursal.aspx",
-              "DocumentMoniker": "C:\\Users\\agusp\\Downloads\\Git\\TP8_GRUPO_4\\Vistas\\AgregarSucursal.aspx",
-              "RelativeDocumentMoniker": "Vistas\\AgregarSucursal.aspx",
-              "ToolTip": "C:\\Users\\agusp\\Downloads\\Git\\TP8_GRUPO_4\\Vistas\\AgregarSucursal.aspx",
-              "RelativeToolTip": "Vistas\\AgregarSucursal.aspx",
+              "Title": "ListadoDeSucursales.aspx",
+              "DocumentMoniker": "C:\\Users\\agusp\\Downloads\\Git\\TP8_GRUPO_4\\Vistas\\aspx\\ListadoDeSucursales.aspx",
+              "RelativeDocumentMoniker": "Vistas\\aspx\\ListadoDeSucursales.aspx",
+              "ToolTip": "C:\\Users\\agusp\\Downloads\\Git\\TP8_GRUPO_4\\Vistas\\aspx\\ListadoDeSucursales.aspx",
+              "RelativeToolTip": "Vistas\\aspx\\ListadoDeSucursales.aspx",
               "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-05-28T21:47:26.913Z",
+              "WhenOpened": "2025-05-28T23:09:22.357Z",
               "EditorCaption": ""
             }
           ]

@@ -156,13 +156,13 @@
                 <td class="auto-style18">&nbsp;</td>
                 <td class="auto-style19">&nbsp;</td>
                 <td class="auto-style42">
-                    <asp:HyperLink ID="HpAdd" runat="server" Font-Italic="False" Font-Overline="False" Font-Size="Medium" Font-Underline="True" ForeColor="Blue" NavigateUrl="~/AgregarSucursal.aspx">Agregar Sucursal</asp:HyperLink>
+                    <asp:HyperLink ID="HpAdd" runat="server" Font-Italic="False" Font-Overline="False" Font-Size="Medium" Font-Underline="True" ForeColor="Blue" NavigateUrl="~/aspx/AgregarSucursal.aspx">Agregar Sucursal</asp:HyperLink>
                 </td>
                 <td class="auto-style52">
-                    <asp:HyperLink ID="HpLista1" runat="server" Font-Italic="False" Font-Overline="False" Font-Size="Medium" Font-Underline="True" ForeColor="Blue" NavigateUrl="~/ListadoDeSucursales.aspx">Listado de Sucursales</asp:HyperLink>
+                    <asp:HyperLink ID="HpLista1" runat="server" Font-Italic="False" Font-Overline="False" Font-Size="Medium" Font-Underline="True" ForeColor="Blue" NavigateUrl="~/aspx/ListadoDeSucursales.aspx">Listado de Sucursales</asp:HyperLink>
                 </td>
                 <td class="auto-style19">
-                    <asp:HyperLink ID="HpDelete2" runat="server" Font-Italic="False" Font-Overline="False" Font-Size="Medium" Font-Underline="True" ForeColor="Blue" NavigateUrl="~/EliminarSucursales.aspx">Eliminar Sucursal</asp:HyperLink>
+                    <asp:HyperLink ID="HpDelete2" runat="server" Font-Italic="False" Font-Overline="False" Font-Size="Medium" Font-Underline="True" ForeColor="Blue" NavigateUrl="~/aspx/EliminarSucursales.aspx">Eliminar Sucursal</asp:HyperLink>
                 </td>
                 <td class="auto-style46">&nbsp;</td>
                 <td class="auto-style49">&nbsp;</td>

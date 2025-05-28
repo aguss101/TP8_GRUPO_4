@@ -79,12 +79,12 @@
         <table class="auto-style1">
             <tr>
                 <td class="auto-style24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:HyperLink ID="hlAgregarSucursal" runat="server" NavigateUrl="~/AgregarSucursal.aspx" ForeColor="Blue">Agregar Sucursal</asp:HyperLink>
+            <asp:HyperLink ID="hlAgregarSucursal" runat="server" NavigateUrl="~/aspx/AgregarSucursal.aspx" ForeColor="Blue">Agregar Sucursal</asp:HyperLink>
                 </td>
-                <td class="auto-style25"><asp:HyperLink ID="hlListarSucursales" runat="server" NavigateUrl="~/ListadoDeSucursales.aspx" ForeColor="Blue">Listado de Sucursales</asp:HyperLink>
+                <td class="auto-style25"><asp:HyperLink ID="hlListarSucursales" runat="server" NavigateUrl="~/aspx/ListadoDeSucursales.aspx" ForeColor="Blue">Listado de Sucursales</asp:HyperLink>
                 </td>
                 <td class="auto-style16">
-&nbsp;&nbsp;<asp:HyperLink ID="hlEliminarSucursal" runat="server" NavigateUrl="~/EliminarSucursales.aspx" ForeColor="Blue">Eliminar Sucursal</asp:HyperLink>
+&nbsp;&nbsp;<asp:HyperLink ID="hlEliminarSucursal" runat="server" NavigateUrl="~/aspx/EliminarSucursales.aspx" ForeColor="Blue">Eliminar Sucursal</asp:HyperLink>
                 </td>
                 <td class="auto-style17">&nbsp;</td>
                 <td class="auto-style17"></td>
