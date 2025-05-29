@@ -6,12 +6,15 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    internal class Sucursal
+    public class Sucursal
     {
         public int IdSucursal { get; set; }
         public string NombreSucursal { get; set; }
         public string DireccionSucursal { get; set; }
         public string DescripcionSucursal { get; set; }
         public int idProvinciaSucursal { get; set; }
+
+        public string ProvinciaSucursal { get; set; }
+
     }
 }

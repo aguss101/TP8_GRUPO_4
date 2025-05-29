@@ -5,27 +5,32 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Negocio;
+using Entidades;
 
 namespace Vistas
 {
     public partial class ListadoDeSucursales : System.Web.UI.Page
     {
-        //private SucursalManager sucursalmanager = new SucursalManager();
+        private SucursalManager sucursalmanager = new SucursalManager();
         private int Orden
         {
             get { return ViewState["Orden"] != null ? (int)ViewState["Orden"] : 0; }
-            set { ViewState["Orden"] = value; }
+            set { ViewState["Orden"] = value; }    
         }
-        /*
+
         protected void Page_Load(object sender, EventArgs e)
         {
             LoadSucursales();
+
+        }
         private void LoadSucursales()
         {
-            gvSucursales.DataSource = sucursalmanager.getSucursales();
+            List<Sucursal> list = sucursalmanager.GetSucursales();
+            gvSucursales.DataSource = list;
             gvSucursales.DataBind();
         }
-        */
+
         protected void btnFiltrar_Click(object sender, EventArgs e)
         {
             lblInvalidInputSuc.Visible = false;
@@ -35,8 +40,9 @@ namespace Vistas
             {
                 try
                 {
-                    //gvSucursales.DataSource = sucursalmanager.FiltrarSucursalId(idInput);
-                    //gvSucursales.DataBind();
+                    Sucursal suc = sucursalmanager.GetSucursalID(idInput);
+                    gvSucursales.DataSource = new List<Sucursal> { suc };
+                    gvSucursales.DataBind();
                 }
                 catch (Exception ex)
                 {

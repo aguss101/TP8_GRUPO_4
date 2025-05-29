@@ -4,3 +4,9 @@ C:\Users\agusp\Downloads\Git\TP8_GRUPO_4\Entidades\obj\Debug\Entidades.csproj.As
 C:\Users\agusp\Downloads\Git\TP8_GRUPO_4\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\agusp\Downloads\Git\TP8_GRUPO_4\Entidades\obj\Debug\Entidades.dll
 C:\Users\agusp\Downloads\Git\TP8_GRUPO_4\Entidades\obj\Debug\Entidades.pdb
+D:\Documents\GitHub\TP8_GRUPO_4\Entidades\bin\Debug\Entidades.dll
+D:\Documents\GitHub\TP8_GRUPO_4\Entidades\bin\Debug\Entidades.pdb
+D:\Documents\GitHub\TP8_GRUPO_4\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+D:\Documents\GitHub\TP8_GRUPO_4\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\TP8_GRUPO_4\Entidades\obj\Debug\Entidades.dll
+D:\Documents\GitHub\TP8_GRUPO_4\Entidades\obj\Debug\Entidades.pdb

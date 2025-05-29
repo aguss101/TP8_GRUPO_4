@@ -9,3 +9,14 @@ C:\Users\agusp\Downloads\Git\TP8_GRUPO_4\Negocio\obj\Debug\Negocio.csproj.CoreCo
 C:\Users\agusp\Downloads\Git\TP8_GRUPO_4\Negocio\obj\Debug\Negocio.csproj.Up2Date
 C:\Users\agusp\Downloads\Git\TP8_GRUPO_4\Negocio\obj\Debug\Negocio.dll
 C:\Users\agusp\Downloads\Git\TP8_GRUPO_4\Negocio\obj\Debug\Negocio.pdb
+D:\Documents\GitHub\TP8_GRUPO_4\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+D:\Documents\GitHub\TP8_GRUPO_4\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\TP8_GRUPO_4\Negocio\obj\Debug\Negocio.dll
+D:\Documents\GitHub\TP8_GRUPO_4\Negocio\obj\Debug\Negocio.pdb
+D:\Documents\GitHub\TP8_GRUPO_4\Negocio\bin\Debug\Negocio.dll
+D:\Documents\GitHub\TP8_GRUPO_4\Negocio\bin\Debug\Negocio.pdb
+D:\Documents\GitHub\TP8_GRUPO_4\Negocio\bin\Debug\Datos.dll
+D:\Documents\GitHub\TP8_GRUPO_4\Negocio\bin\Debug\Entidades.dll
+D:\Documents\GitHub\TP8_GRUPO_4\Negocio\bin\Debug\Datos.pdb
+D:\Documents\GitHub\TP8_GRUPO_4\Negocio\bin\Debug\Entidades.pdb
+D:\Documents\GitHub\TP8_GRUPO_4\Negocio\obj\Debug\Negocio.csproj.Up2Date
