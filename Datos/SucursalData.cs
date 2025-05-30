@@ -5,6 +5,7 @@ using System.Collections.ObjectModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -92,6 +93,26 @@ namespace Datos
                 SqlCommand cmd = new SqlCommand(querysql, con);
 
             }
+        }
+        public void AddSucursal(Sucursal sucursal)
+        {
+            string querysql = @"INSERT INTO Sucursal (NombreSucursal, DescripcionSucursal, DireccionSucursal, Id_ProvinciaSucursal)
+                        VALUES (@nombre, @descripcion, @direccion, @Id_ProvinciaSucursal)";
+
+            using (SqlConnection con = conexion.GetConnection())
+            {
+                using (SqlCommand cmd = new SqlCommand(querysql, con))
+                {
+                    cmd.Parameters.AddWithValue("@nombre", sucursal.NombreSucursal);
+                    cmd.Parameters.AddWithValue("@descripcion", sucursal.DescripcionSucursal);
+                    cmd.Parameters.AddWithValue("@direccion", sucursal.DireccionSucursal);
+                    cmd.Parameters.AddWithValue("@Id_ProvinciaSucursal", sucursal.idProvinciaSucursal);
+
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                }
+            }
+
         }
         public List<string> GetSucursalProvincias()
         {

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Entidades;
 using Negocio;
 
 namespace Vistas
@@ -33,6 +34,31 @@ namespace Vistas
         protected void btnAceptar_Click(object sender, EventArgs e)
         {
 
+
+            Sucursal sucursalToAdd = new Sucursal();
+
+            sucursalToAdd.NombreSucursal = txtNameSuc.Text;
+            sucursalToAdd.DescripcionSucursal = txtDesc.Text;
+            sucursalToAdd.DireccionSucursal = txtDir.Text;
+            sucursalToAdd.idProvinciaSucursal = ddlProvincias.SelectedIndex + 1;
+            try
+            {
+                sucursalManager.AddSucursal(sucursalToAdd);
+                lblCorrect.Text = "Sucursal agregada correctamente.\n Nombre:" + sucursalToAdd.NombreSucursal +
+                                  "\n Descripcion: " + sucursalToAdd.DescripcionSucursal +
+                                  "\n Direccion: " + sucursalToAdd.DireccionSucursal +
+                                  "\n Provincia: " + ddlProvincias.SelectedItem.Text
+                ;
+                
+                lblCorrect.ForeColor = System.Drawing.Color.Green;
+
+            }
+            catch (Exception ex)
+            {
+                lblCorrect.Text = "Error al agregar la sucursal: " + ex.Message;
+                lblCorrect.ForeColor = System.Drawing.Color.Red;
+            }
+            /*
             if (Page.IsValid)
             {
                 string nombre = txtNameSuc.Text;
@@ -54,6 +80,8 @@ namespace Vistas
                 txtDesc.Text = "";
                 txtDir.Text = "";
             }
+            */
+
         }
     }
 }

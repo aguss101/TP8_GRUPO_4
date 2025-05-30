@@ -297,7 +297,9 @@
                 <td class="auto-style19" colspan="2">
                     <asp:Label ID="lblCorrect" runat="server" Font-Bold="True" ForeColor="Green"></asp:Label>
                 </td>
-                <td class="auto-style49">&nbsp;</td>
+                <td class="auto-style49">
+                    <asp:Label ID="Label1" runat="server"></asp:Label>
+                </td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
                 <td class="auto-style21">&nbsp;</td>
