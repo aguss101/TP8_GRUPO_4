@@ -72,5 +72,22 @@ namespace Datos
             }
         }
 
+        public List<string> GetSucursalProvincias()
+        {
+            List<string> provincias = new List<string>();
+            string querySQL = "SELECT DescripcionProvincia FROM Provincia";
+            using (SqlConnection con = conexion.GetConnection())
+            {
+                SqlCommand cmd = new SqlCommand(querySQL, con);
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    provincias.Add(Convert.ToString(reader["DescripcionProvincia"]));
+                }
+            }
+            return provincias;
+        }
+
     }
 }

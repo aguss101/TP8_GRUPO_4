@@ -21,5 +21,9 @@ namespace Negocio
             return sucursalData.GetSucursalID(idSucursal);
         }
 
+        public List <String> GetSucursalProvincias()
+        {
+            return sucursalData.GetSucursalProvincias();
+        }
     }
 }
