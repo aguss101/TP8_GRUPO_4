@@ -32,14 +32,7 @@ namespace Negocio
         {
             sucursalData.AddSucursal(sucursal);
         }
-        public bool SucursalExists(int idSucursal)
-        {
-            return sucursalData.SucursalExists(idSucursal);
-        }
-        public void DeleteSucursal(int idSucursal)
-        { 
-            sucursalData.DeleteSucursal(idSucursal);
-        }
+        public bool DeleteSucursal(int idSucursal) => sucursalData.DeleteSucursal(idSucursal);
 
     }
 }

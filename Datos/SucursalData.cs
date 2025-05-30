@@ -73,27 +73,19 @@ namespace Datos
 
             }
         }
-        public bool SucursalExists(int idSucursal)
+        public bool DeleteSucursal(int idSucursal)
         {
-            string querySQL = "SELECT COUNT(*) FROM Sucursal WHERE Id_Sucursal = @Id";
+            string deleteQuery = "DELETE FROM Sucursal WHERE Id_Sucursal = @Id";
+
             using (SqlConnection con = conexion.GetConnection())
             {
-                SqlCommand cmd = new SqlCommand(querySQL, con);
+                SqlCommand cmd = new SqlCommand(deleteQuery, con);
                 cmd.Parameters.AddWithValue("@Id", idSucursal);
+
                 con.Open();
-                int count = (int)cmd.ExecuteScalar();
-                return count > 0;
-            }
-        }
-        public void DeleteSucursal(int idSucursal)
-        {
-            string querysql = "DELETE FROM Sucursal WHERE Id_Sucursal = @idSucursal ";
-            using (SqlConnection con = conexion.GetConnection())
-            {
-                SqlCommand cmd = new SqlCommand(querysql, con);
-                cmd.Parameters.AddWithValue("@idSucursal", idSucursal);
-                con.Open();
-                cmd.ExecuteNonQuery();
+                int rowsAffected = cmd.ExecuteNonQuery();
+
+                return rowsAffected > 0; // True si se eliminó, false si no existía
             }
         }
         public void AddSucursal(Sucursal sucursal)
