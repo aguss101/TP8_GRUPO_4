@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Datos;
+using Entidades;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Datos;
-using Entidades;
 
 namespace Negocio
 {
@@ -24,6 +26,13 @@ namespace Negocio
         public List <String> GetSucursalProvincias()
         {
             return sucursalData.GetSucursalProvincias();
+        public void DeleteSucursal(int idSucursal)
+        { 
+            sucursalData.DeleteSucursal(idSucursal);
+        }
+        public bool SucursalExists(int idSucursal)
+        {
+            return sucursalData.SucursalExists(idSucursal);
         }
     }
 }

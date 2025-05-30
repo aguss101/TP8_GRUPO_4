@@ -4,12 +4,14 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Negocio;
+using Entidades;
+
 namespace Vistas
 {
     public partial class EliminarSucursales : System.Web.UI.Page
     {
-        //private DataBaseAccess db = new DataBaseAccess();
-        //private SucursalManager sucursalManager = new SucursalManager();
+        private SucursalManager sucursalManager = new SucursalManager();
 
         protected void Page_Load(object sender, EventArgs e)
         {}
@@ -19,9 +21,7 @@ namespace Vistas
             int idInput;
             if (int.TryParse(txbEliminarSucursal.Text.Trim(), out idInput))
             {
-                lblComprobarSucursal.Visible = true; //esta linea es solamente para que funcione el progrma luego hay que eliminarla
-
-                /* if (sucursalManager.SucursalExists(idInput))
+                 if (sucursalManager.SucursalExists(idInput))
                  {
                      sucursalManager.DeleteSucursal(idInput);
 
@@ -38,7 +38,7 @@ namespace Vistas
 
                      lblErrorFormato.Visible = false;
                  }
-             }
+            }
              else
              {
                  lblErrorFormato.Visible = true;
@@ -46,8 +46,6 @@ namespace Vistas
                  lblEliminado.Visible = false;
                  lblError.Visible = false;
              }
-                */
-            }
         }
         protected void comprobarSucursal(object sender, EventArgs e)
         {

@@ -1,11 +1,12 @@
-﻿using System;
+﻿using Entidades;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Entidades;
-using System.Data;
-using System.Data.SqlClient;
 
 namespace Datos
 {
@@ -71,6 +72,24 @@ namespace Datos
 
             }
         }
+        public bool SucursalExists(int idSucursal)
+        {
+            string querySQL = "SELECT COUNT(*) FROM Sucursal WHERE Id_Sucursal = @Id";
+            using (SqlConnection con = conexion.GetConnection())
+            {
+                SqlCommand cmd = new SqlCommand(querySQL, con);
+                cmd.Parameters.AddWithValue("@Id", idSucursal);
+                con.Open();
+                int count = (int)cmd.ExecuteScalar();
+                return count > 0;
+            }
+        }
+        public void DeleteSucursal(int idSucursal)
+        {
+            string querysql = "DELETE FROM Sucursal WHERE Id_Sucursal = @idSucursal ";
+            using (SqlConnection con = conexion.GetConnection())
+            {
+                SqlCommand cmd = new SqlCommand(querysql, con);
 
         public List<string> GetSucursalProvincias()
         {
@@ -89,5 +108,10 @@ namespace Datos
             return provincias;
         }
 
+                cmd.Parameters.AddWithValue("@idSucursal", idSucursal);
+                con.Open();
+                cmd.ExecuteNonQuery();
+            }
+        }
     }
 }
