@@ -91,7 +91,9 @@ namespace Datos
             using (SqlConnection con = conexion.GetConnection())
             {
                 SqlCommand cmd = new SqlCommand(querysql, con);
-
+                cmd.Parameters.AddWithValue("@idSucursal", idSucursal);
+                con.Open();
+                cmd.ExecuteNonQuery();
             }
         }
         public void AddSucursal(Sucursal sucursal)
@@ -130,12 +132,5 @@ namespace Datos
             }
             return provincias;
         }
-        /*
-                cmd.Parameters.AddWithValue("@idSucursal", idSucursal);
-                con.Open();
-                cmd.ExecuteNonQuery();
-
-        */
-            }
-        }
-    
+    }
+}

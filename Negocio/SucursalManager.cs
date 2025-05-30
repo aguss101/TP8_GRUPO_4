@@ -28,11 +28,6 @@ namespace Negocio
             return sucursalData.GetSucursalProvincias();
 
         }
-        public void DeleteSucursal(int idSucursal)
-        { 
-            sucursalData.DeleteSucursal(idSucursal);
-        }
-
         public void AddSucursal(Sucursal sucursal)
         {
             sucursalData.AddSucursal(sucursal);
@@ -41,5 +36,10 @@ namespace Negocio
         {
             return sucursalData.SucursalExists(idSucursal);
         }
+        public void DeleteSucursal(int idSucursal)
+        { 
+            sucursalData.DeleteSucursal(idSucursal);
+        }
+
     }
 }
