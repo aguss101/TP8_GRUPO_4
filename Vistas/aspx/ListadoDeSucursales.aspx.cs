@@ -38,24 +38,26 @@ namespace Vistas
             int idInput;
             if (int.TryParse(txbIdSucursal.Text, out idInput))
             {
-                try
+                Sucursal suc = sucursalmanager.GetSucursalID(idInput);
+                bool sucursalValida = suc.IdSucursal == idInput;
+                if (sucursalValida)
                 {
-                    Sucursal suc = sucursalmanager.GetSucursalID(idInput);
                     gvSucursales.DataSource = new List<Sucursal> { suc };
                     gvSucursales.DataBind();
                 }
-                catch (Exception ex)
+                else
                 {
-                    lblInvalidInputSuc.Text = "Error al filtrar sucursales: " + ex.Message;
+                    lblInvalidInputSuc.Text = $"La sucursal {idInput} no existe.";
                     lblInvalidInputSuc.Visible = true;
                 }
-            }
-            else
-            {
+               }
+                else
+                {
+                lblInvalidInputSuc.Text = $"Ingrese un ID válido";
                 lblInvalidInputSuc.Visible = true;
-            }
-            txbIdSucursal.Text = "";
-        }
+                }
+                txbIdSucursal.Text = "";
+            } 
         
         protected void btnOrdenarSucursales(object sender, EventArgs e)
         {
