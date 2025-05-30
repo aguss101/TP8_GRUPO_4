@@ -29,6 +29,7 @@ namespace Vistas
             List <String> provincias = sucursalManager.GetSucursalProvincias();
             ddlProvincias.DataSource = provincias;
             ddlProvincias.DataBind();
+            ddlProvincias.Items.Insert(0, new ListItem("--- Seleccionar ---", ""));
         }
     
         protected void btnAceptar_Click(object sender, EventArgs e)
@@ -51,6 +52,10 @@ namespace Vistas
                 ;
                 
                 lblCorrect.ForeColor = System.Drawing.Color.Green;
+                ddlProvincias.SelectedIndex = 0;
+                txtNameSuc.Text = "";
+                txtDesc.Text = "";
+                txtDir.Text = "";
 
             }
             catch (Exception ex)
