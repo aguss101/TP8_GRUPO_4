@@ -23,9 +23,11 @@ namespace Negocio
             return sucursalData.GetSucursalID(idSucursal);
         }
 
-        public List <String> GetSucursalProvincias()
+        public List<String> GetSucursalProvincias()
         {
             return sucursalData.GetSucursalProvincias();
+
+        }
         public void DeleteSucursal(int idSucursal)
         { 
             sucursalData.DeleteSucursal(idSucursal);

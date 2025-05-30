@@ -91,6 +91,8 @@ namespace Datos
             {
                 SqlCommand cmd = new SqlCommand(querysql, con);
 
+            }
+        }
         public List<string> GetSucursalProvincias()
         {
             List<string> provincias = new List<string>();
@@ -107,11 +109,12 @@ namespace Datos
             }
             return provincias;
         }
-
+        /*
                 cmd.Parameters.AddWithValue("@idSucursal", idSucursal);
                 con.Open();
                 cmd.ExecuteNonQuery();
+
+        */
             }
         }
-    }
-}
+    
