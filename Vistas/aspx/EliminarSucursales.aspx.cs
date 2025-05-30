@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Negocio;
 using Entidades;
+using System.Diagnostics;
 
 namespace Vistas
 {
@@ -26,24 +27,22 @@ namespace Vistas
 
             if (int.TryParse(txbEliminarSucursal.Text.Trim(), out idInput))
             {
-
-                bool eliminado = sucursalManager.DeleteSucursal(idInput);
-
-                 if (eliminado)
-                 {
-                    lblEliminado.Visible = true;
-                    txbEliminarSucursal.Text = "";
-                 }
-                 else
-                 {
-                     lblError.Visible = true;
-
-                 }
+                if (sucursalManager.Exists(idInput))
+                {
+                    string nombreSucursal = sucursalManager.GetSucursalID(idInput).NombreSucursal;
+                    pnlConfirmacion.Visible = true;
+                    lblConfirmacion.Text = "Desea eliminar la Sucursal: " + nombreSucursal + " ?";
+                    btnConfirmar.CommandArgument = idInput.ToString();
+                }
+                else
+                {
+                    lblError.Visible = true;
+                }
             }
-             else
-             {
-                 lblErrorFormato.Visible = true;
-             }
+            else
+            {
+                lblErrorFormato.Visible = true;
+            }
         }
         protected void comprobarSucursal(object sender, EventArgs e)
         {
@@ -62,6 +61,23 @@ namespace Vistas
                     lblComprobarSucursal.Visible = false;
                 }*/
             }
+        }
+        protected void btnConfirmar_Click(object sender, EventArgs e)
+        {
+            if(int.TryParse(btnConfirmar.CommandArgument, out int idSucursal))
+            {
+                pnlConfirmacion.Visible = false;
+                lblEliminado.Visible = true;
+                txbEliminarSucursal.Text = "";
+                sucursalManager.DeleteSucursal(idSucursal);
+                btnConfirmar.CommandArgument = "null";
+            }
+        }
+        protected void btnCancelar_Click(object sender, EventArgs e)
+        {
+            pnlConfirmacion.Visible = false;
+            txbEliminarSucursal.Text = "";
+            btnConfirmar.CommandArgument = "null";
         }
     }
 }

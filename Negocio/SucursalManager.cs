@@ -2,11 +2,7 @@
 using Entidades;
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Runtime.Remoting.Messaging;
 
 namespace Negocio
 {
@@ -33,6 +29,7 @@ namespace Negocio
             sucursalData.AddSucursal(sucursal);
         }
         public bool DeleteSucursal(int idSucursal) => sucursalData.DeleteSucursal(idSucursal);
+        public bool Exists(int idSucursal) => sucursalData.Exists(idSucursal);
 
     }
 }

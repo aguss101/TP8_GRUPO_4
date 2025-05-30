@@ -1,20 +1,14 @@
 ﻿using Entidades;
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Reflection.Emit;
-using System.Text;
-using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace Datos
 {
     public class SucursalData
     {
         private DataBaseAccess conexion = new DataBaseAccess();
-
 
         public List<Sucursal> GetSucursales()
         {
@@ -123,6 +117,19 @@ namespace Datos
                 }
             }
             return provincias;
+        }
+
+        public bool Exists(int idSucursal)
+        {
+            string querySQL = "SELECT COUNT(*) FROM Sucursal WHERE Id_Sucursal = @Id";
+            using (SqlConnection con = conexion.GetConnection())
+            {
+                SqlCommand cmd = new SqlCommand(querySQL, con);
+                cmd.Parameters.AddWithValue("@Id", idSucursal);
+                con.Open();
+                int count = (int)cmd.ExecuteScalar();
+                return count > 0;
+            }
         }
     }
 }

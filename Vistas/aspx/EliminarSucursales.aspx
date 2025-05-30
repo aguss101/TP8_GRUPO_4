@@ -71,6 +71,29 @@
         .auto-style29 {
             width: 11%;
         }
+        .emergente{
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-color: rgba(0,0,0,0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+        .emergente .content{
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            text-align: center;
+            min-width: 300px;
+        }
+        .emergente-boton button{
+            display: block;
+            width: 100%;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
@@ -158,6 +181,16 @@
                     <td class="auto-style15"></td>
                 </tr>
                 </table>
+                <asp:Panel ID="pnlConfirmacion" runat="server" Visible="false" CssClass="emergente">
+                    <div class="content">
+                        <asp:Label ID="lblConfirmacion" runat="server" />
+                        <br /><br />
+                        <div>
+                        <asp:Button ID="btnConfirmar" runat="server" Text="Confirmar" OnClick="btnConfirmar_Click" CommandArgument="null"/>
+                        <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" OnClick="btnCancelar_Click" />
+                        </div>
+                    </div>
+                </asp:Panel>
         </div>
     </form>
 </body>
