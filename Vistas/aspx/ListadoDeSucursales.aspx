@@ -68,6 +68,29 @@
         .auto-style28 {
             height: 11px;
         }
+        .emergente{
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-color: rgba(0,0,0,0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+        .emergente .content{
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            text-align: center;
+            min-width: 300px;
+        }
+        .emergente-boton button{
+            display: block;
+            width: 100%;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
@@ -172,6 +195,18 @@
                 <td>&nbsp;</td>
             </tr>
             </table>
+                <asp:Panel ID="pnlOrden" runat="server" Visible="false" CssClass="emergente">
+                    <div class="content">
+                        <asp:Label ID="lblOrden" runat="server" Text="Como desea ordenar la lista?"/>
+                        <br /><br />
+                        <div>
+                        <asp:Button ID="btnID" runat="server" Text="Por ID" OnClick="sortList" CommandArgument="ID"/>
+                        <asp:Button ID="btnNombre" runat="server" Text="Por Nombre" OnClick="sortList" CommandArgument="NOMBRE"/>
+                        <asp:Button ID="btnProvincia" runat="server" Text="Por Provincia" OnClick="sortList" CommandArgument="PROVINCIA"/>
+                        <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" OnClick="sortList" CommandArgument="CANCELAR"/>
+                        </div>
+                    </div>
+                </asp:Panel>
     </form>
 </body>
 </html>

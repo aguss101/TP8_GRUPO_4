@@ -21,7 +21,10 @@ namespace Vistas
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            LoadSucursales();
+            if (!IsPostBack)
+            {
+                LoadSucursales();
+            }
 
         }
         private void LoadSucursales()
@@ -59,27 +62,7 @@ namespace Vistas
         
         protected void btnOrdenarSucursales(object sender, EventArgs e)
         {
-            //DataTable tabla = sucursalmanager.getSucursales();
-           // DataView vista = tabla.DefaultView;
-
-            switch (Orden)
-            {
-                case 0:
-                case -1:
-                    Orden = 1;
-               //     vista.Sort = "PROVINCIA ASC";
-                    break;
-                case 1:
-                    Orden = -1;
-                //    vista.Sort = "PROVINCIA DESC";
-                    break;
-                default:
-                    Orden = 0;
-                    break;
-            }
-
-           // gvSucursales.DataSource = vista.ToTable();
-          //  gvSucursales.DataBind();
+            pnlOrden.Visible = true;
         }
         
         protected void btnMostrarTodos_Click(object sender, EventArgs e)
@@ -87,5 +70,30 @@ namespace Vistas
             txbIdSucursal.Text = "";
             //Orden = 0;
         } 
-}
+        protected void sortList(object sender, EventArgs e)
+        {
+            pnlOrden.Visible = false;
+            List<Sucursal> list = sucursalmanager.GetSucursales();
+
+            if(sender is Button btn)
+            {
+                switch (btn.CommandArgument.ToString())
+                {
+                    case "ID":
+                        list = list.OrderBy(s => s.IdSucursal).ToList();
+                        break;
+                    case "NOMBRE":
+                        list = list.OrderBy(s => s.NombreSucursal).ToList();
+                        break;
+                    case "PROVINCIA":
+                        list = list.OrderBy(s => s.ProvinciaSucursal).ToList();
+                        break;
+                    case "CANCELAR":
+                        return;
+                }
+                gvSucursales.DataSource = list;
+                gvSucursales.DataBind();
+            }
+        }
+    }
     }
