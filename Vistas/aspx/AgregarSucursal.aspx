@@ -233,7 +233,7 @@
                     <asp:Label ID="lblDesc" runat="server" Font-Bold="False" Font-Size="Large" Text="Descripcion:"></asp:Label>
                 </td>
                 <td class="auto-style61" colspan="2">
-                    <asp:TextBox ID="txtDesc" runat="server" Height="40px" Width="272px" ValidationGroup="Group1"></asp:TextBox>
+                    <asp:TextBox ID="txtDesc" runat="server"  MaxLength="100" Height="40px" Width="272px" ValidationGroup="Group1"></asp:TextBox>
                 </td>
                 <td class="auto-style60">
                     <asp:RequiredFieldValidator ID="rfvDescripcion" runat="server" ControlToValidate="txtDesc" ErrorMessage="Ingrese una descripción" ForeColor="Red" ValidationGroup="Group1"></asp:RequiredFieldValidator>
