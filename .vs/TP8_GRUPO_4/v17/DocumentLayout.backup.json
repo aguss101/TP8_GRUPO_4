@@ -1,22 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\WinByLato\\Desktop\\TP8_GRUPO_4\\",
+  "WorkspaceRootPath": "C:\\Users\\agusp\\Downloads\\Git\\TP8_GRUPO_4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{93C34AEA-AB40-4CCB-8EC7-6DED5963B68F}|Vistas\\Vistas.csproj|c:\\users\\winbylato\\desktop\\tp8_grupo_4\\vistas\\aspx\\eliminarsucursales.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{93C34AEA-AB40-4CCB-8EC7-6DED5963B68F}|Vistas\\Vistas.csproj|c:\\users\\agusp\\downloads\\git\\tp8_grupo_4\\vistas\\aspx\\agregarsucursal.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93C34AEA-AB40-4CCB-8EC7-6DED5963B68F}|Vistas\\Vistas.csproj|solutionrelative:vistas\\aspx\\agregarsucursal.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93C34AEA-AB40-4CCB-8EC7-6DED5963B68F}|Vistas\\Vistas.csproj|c:\\users\\agusp\\downloads\\git\\tp8_grupo_4\\vistas\\aspx\\agregarsucursal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{93C34AEA-AB40-4CCB-8EC7-6DED5963B68F}|Vistas\\Vistas.csproj|solutionrelative:vistas\\aspx\\agregarsucursal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93C34AEA-AB40-4CCB-8EC7-6DED5963B68F}|Vistas\\Vistas.csproj|c:\\users\\agusp\\downloads\\git\\tp8_grupo_4\\vistas\\aspx\\eliminarsucursales.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{93C34AEA-AB40-4CCB-8EC7-6DED5963B68F}|Vistas\\Vistas.csproj|solutionrelative:vistas\\aspx\\eliminarsucursales.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BDD75DC-0BD4-4C5D-A09D-B1890D2593AE}|Negocio\\Negocio.csproj|C:\\Users\\WinByLato\\Desktop\\TP8_GRUPO_4\\negocio\\sucursalmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BDD75DC-0BD4-4C5D-A09D-B1890D2593AE}|Negocio\\Negocio.csproj|solutionrelative:negocio\\sucursalmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9CCD0A8-56C8-4B58-8CA8-F31B3A325B50}|Entidades\\Entidades.csproj|C:\\Users\\WinByLato\\Desktop\\TP8_GRUPO_4\\entidades\\sucursal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9CCD0A8-56C8-4B58-8CA8-F31B3A325B50}|Entidades\\Entidades.csproj|solutionrelative:entidades\\sucursal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73E94A1C-7F6F-459F-9DD5-557123A0391C}|Datos\\Datos.csproj|C:\\Users\\WinByLato\\Desktop\\TP8_GRUPO_4\\datos\\sucursaldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73E94A1C-7F6F-459F-9DD5-557123A0391C}|Datos\\Datos.csproj|solutionrelative:datos\\sucursaldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -37,56 +33,57 @@
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EliminarSucursales.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\WinByLato\\Desktop\\TP8_GRUPO_4\\Vistas\\aspx\\EliminarSucursales.aspx.cs",
-              "RelativeDocumentMoniker": "Vistas\\aspx\\EliminarSucursales.aspx.cs",
-              "ToolTip": "C:\\Users\\WinByLato\\Desktop\\TP8_GRUPO_4\\Vistas\\aspx\\EliminarSucursales.aspx.cs",
-              "RelativeToolTip": "Vistas\\aspx\\EliminarSucursales.aspx.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAgwBwAAAASAAAAAAAAAA==",
+              "Title": "AgregarSucursal.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\agusp\\Downloads\\Git\\TP8_GRUPO_4\\Vistas\\aspx\\AgregarSucursal.aspx.cs",
+              "RelativeDocumentMoniker": "Vistas\\aspx\\AgregarSucursal.aspx.cs",
+              "ToolTip": "C:\\Users\\agusp\\Downloads\\Git\\TP8_GRUPO_4\\Vistas\\aspx\\AgregarSucursal.aspx.cs",
+              "RelativeToolTip": "Vistas\\aspx\\AgregarSucursal.aspx.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwCkAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T01:20:12.665Z",
+              "WhenOpened": "2025-05-31T17:50:28.288Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SucursalManager.cs",
-              "DocumentMoniker": "C:\\Users\\WinByLato\\Desktop\\TP8_GRUPO_4\\Negocio\\SucursalManager.cs",
-              "RelativeDocumentMoniker": "Negocio\\SucursalManager.cs",
-              "ToolTip": "C:\\Users\\WinByLato\\Desktop\\TP8_GRUPO_4\\Negocio\\SucursalManager.cs",
-              "RelativeToolTip": "Negocio\\SucursalManager.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAUwCIAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T17:01:44.889Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SucursalData.cs",
-              "DocumentMoniker": "C:\\Users\\WinByLato\\Desktop\\TP8_GRUPO_4\\Datos\\SucursalData.cs",
-              "RelativeDocumentMoniker": "Datos\\SucursalData.cs",
-              "ToolTip": "C:\\Users\\WinByLato\\Desktop\\TP8_GRUPO_4\\Datos\\SucursalData.cs",
-              "RelativeToolTip": "Datos\\SucursalData.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAgwFgAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T16:31:23.411Z",
+              "Title": "AgregarSucursal.aspx",
+              "DocumentMoniker": "C:\\Users\\agusp\\Downloads\\Git\\TP8_GRUPO_4\\Vistas\\aspx\\AgregarSucursal.aspx",
+              "RelativeDocumentMoniker": "Vistas\\aspx\\AgregarSucursal.aspx",
+              "ToolTip": "C:\\Users\\agusp\\Downloads\\Git\\TP8_GRUPO_4\\Vistas\\aspx\\AgregarSucursal.aspx",
+              "RelativeToolTip": "Vistas\\aspx\\AgregarSucursal.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-05-31T17:50:16.795Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Sucursal.cs",
-              "DocumentMoniker": "C:\\Users\\WinByLato\\Desktop\\TP8_GRUPO_4\\Entidades\\Sucursal.cs",
-              "RelativeDocumentMoniker": "Entidades\\Sucursal.cs",
-              "ToolTip": "C:\\Users\\WinByLato\\Desktop\\TP8_GRUPO_4\\Entidades\\Sucursal.cs",
-              "RelativeToolTip": "Entidades\\Sucursal.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Title": "EliminarSucursales.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\agusp\\Downloads\\Git\\TP8_GRUPO_4\\Vistas\\aspx\\EliminarSucursales.aspx.cs",
+              "RelativeDocumentMoniker": "Vistas\\aspx\\EliminarSucursales.aspx.cs",
+              "ToolTip": "C:\\Users\\agusp\\Downloads\\Git\\TP8_GRUPO_4\\Vistas\\aspx\\EliminarSucursales.aspx.cs",
+              "RelativeToolTip": "Vistas\\aspx\\EliminarSucursales.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T16:21:30.201Z",
+              "WhenOpened": "2025-05-30T01:20:12.665Z",
               "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 337,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             }
           ]
         }

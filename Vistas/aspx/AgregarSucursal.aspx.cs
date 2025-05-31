@@ -45,10 +45,10 @@ namespace Vistas
             try
             {
                 sucursalManager.AddSucursal(sucursalToAdd);
-                lblCorrect.Text = "Sucursal agregada correctamente.\n Nombre:" + sucursalToAdd.NombreSucursal +
-                                  "\n Descripcion: " + sucursalToAdd.DescripcionSucursal +
-                                  "\n Direccion: " + sucursalToAdd.DireccionSucursal +
-                                  "\n Provincia: " + ddlProvincias.SelectedItem.Text
+                lblCorrect.Text = "Sucursal agregada correctamente.<br />Nombre:" + sucursalToAdd.NombreSucursal +
+                                  "<br />Descripcion: " + sucursalToAdd.DescripcionSucursal +
+                                  "<br />Direccion: " + sucursalToAdd.DireccionSucursal +
+                                  "<br />Provincia: " + ddlProvincias.SelectedItem.Text
                 ;
                 
                 lblCorrect.ForeColor = System.Drawing.Color.Green;
