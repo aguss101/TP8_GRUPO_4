@@ -217,7 +217,7 @@
                     <asp:Label ID="lblNameSuc" runat="server" Font-Size="Large" Text="Nombre Sucursal:"></asp:Label>
                 </td>
                 <td class="auto-style67" colspan="2">
-                    <asp:TextBox ID="txtNameSuc" runat="server" Width="272px" ValidationGroup="Group1"></asp:TextBox>
+                    <asp:TextBox ID="txtNameSuc" MaxLength="100" runat="server" Width="272px" ValidationGroup="Group1"></asp:TextBox>
                 </td>
                 <td class="auto-style66" colspan="2">
                     <asp:RequiredFieldValidator ID="rfvNombre" runat="server" ControlToValidate="txtNameSuc" ErrorMessage="Ingrese el nombre de la sucursal" ForeColor="Red" ValidationGroup="Group1"></asp:RequiredFieldValidator>
@@ -233,7 +233,7 @@
                     <asp:Label ID="lblDesc" runat="server" Font-Bold="False" Font-Size="Large" Text="Descripcion:"></asp:Label>
                 </td>
                 <td class="auto-style61" colspan="2">
-                    <asp:TextBox ID="txtDesc" runat="server"  MaxLength="100" Height="40px" Width="272px" ValidationGroup="Group1"></asp:TextBox>
+                    <asp:TextBox ID="txtDesc" runat="server" MaxLength="100" Height="40px" Width="272px" ValidationGroup="Group1"></asp:TextBox>
                 </td>
                 <td class="auto-style60">
                     <asp:RequiredFieldValidator ID="rfvDescripcion" runat="server" ControlToValidate="txtDesc" ErrorMessage="Ingrese una descripción" ForeColor="Red" ValidationGroup="Group1"></asp:RequiredFieldValidator>
@@ -254,7 +254,7 @@
                     </asp:DropDownList>
                 </td>
                 <td class="auto-style54" colspan="2">
-                    <asp:RequiredFieldValidator ID="rfvProvincia" runat="server" ControlToValidate="ddlProvincias" ErrorMessage="Ingrese la provincia" ForeColor="Red" ValidationGroup="Group1" InitialValue="0"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="rfvProvincia" runat="server" ControlToValidate="ddlProvincias" ErrorMessage="Ingrese la provincia" ForeColor="Red" ValidationGroup="Group1" InitialValue=""></asp:RequiredFieldValidator>
                 </td>
                 <td class="auto-style57"></td>
                 <td class="auto-style58"></td>
@@ -267,7 +267,7 @@
                     <asp:Label ID="lblProv0" runat="server" Font-Bold="False" Font-Size="Large" Text="Direccion:"></asp:Label>
                 </td>
                 <td class="auto-style42" colspan="2">
-                    <asp:TextBox ID="txtDir" runat="server" Width="271px" ValidationGroup="Group1"></asp:TextBox>
+                    <asp:TextBox ID="txtDir" runat="server" MaxLength="100" Width="271px" ValidationGroup="Group1"></asp:TextBox>
                 </td>
                 <td class="auto-style19" colspan="2">
                     <asp:RequiredFieldValidator ID="rfvDireccion" runat="server" ControlToValidate="txtDir" ErrorMessage="Ingrese la dirección de la sucursal" ForeColor="Red" ValidationGroup="Group1"></asp:RequiredFieldValidator>
