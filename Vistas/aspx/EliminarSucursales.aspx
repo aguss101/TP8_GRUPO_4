@@ -13,7 +13,7 @@
         .auto-style4 {
             height: 54px;
         }
-        .auto-style9 {
+        .auto-style9 {            height: 72px;
         }
         .auto-style10 {
             width: 2%;
@@ -68,9 +68,6 @@
             width: 3%;
             height: 54px;
         }
-        .auto-style29 {
-            width: 11%;
-        }
         .emergente{
             position: fixed;
             top: 0; left: 0;
@@ -93,6 +90,25 @@
             display: block;
             width: 100%;
             margin-top: 10px;
+        }
+        .auto-style30 {
+            width: 2%;
+            height: 72px;
+        }
+        .auto-style31 {
+            width: 14%;
+            height: 72px;
+        }
+        .auto-style32 {
+            width: 3%;
+            height: 72px;
+        }
+        .auto-style33 {
+            width: 14%;
+        }
+        .auto-style34 {
+            width: 14%;
+            height: 23px;
         }
     </style>
 </head>
@@ -117,7 +133,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style16">&nbsp;</td>
-                    <td class="auto-style29">&nbsp;</td>
+                    <td class="auto-style33">&nbsp;</td>
                     <td class="auto-style23">&nbsp;</td>
                     <td class="auto-style24">&nbsp;</td>
                     <td class="auto-style19">&nbsp;</td>
@@ -136,13 +152,13 @@
                     <td class="auto-style28"></td>
                 </tr>
                 <tr>
-                    <td class="auto-style16">
-                        &nbsp;</td>
-                    <td class="auto-style29">
+                    <td class="auto-style30">
+                        </td>
+                    <td class="auto-style31">
                         <asp:Label ID="Label1" runat="server" Text="Ingresar ID sucursal:"></asp:Label>
                     </td>
                     <td class="auto-style9" colspan="4">
-                        <asp:TextBox ID="txbEliminarSucursal" runat="server" Width="306px" ValidationGroup="Group2" OnTextChanged="comprobarSucursal" AutoPostBack="true"></asp:TextBox>
+                        <asp:TextBox ID="txbEliminarSucursal" runat="server" Width="306px" ValidationGroup="Group2" OnTextChanged="txbEliminarSucursal_TextChanged" AutoPostBack="true"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <asp:Button ID="btnEliminarSucursal" runat="server" Text="Eliminar" OnClick="btnEliminarSucursal_Click" ValidationGroup="Group2" />
                     &nbsp;&nbsp;<asp:Label ID="lblError" runat="server" ForeColor="Red" Text="Ingrese un numero de sucursal valido" Visible="False"></asp:Label>
@@ -150,7 +166,7 @@
                         &nbsp;&nbsp;&nbsp;<asp:Label ID="lblComprobarSucursal" runat="server" ForeColor="Green" Text="Esta ID pertenece a una sucursal" Visible="False"></asp:Label>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     </td>
-                    <td class="auto-style20">&nbsp;</td>
+                    <td class="auto-style32"></td>
                 </tr>
                 <tr>
                     <td class="auto-style10"></td>
@@ -164,8 +180,18 @@
                 </tr>
                 <tr>
                     <td class="auto-style16">&nbsp;</td>
-                    <td class="auto-style29">&nbsp;</td>
-                    <td class="auto-style23">&nbsp;</td>
+                    <td class="auto-style33">&nbsp;</td>
+                    <td class="auto-style23">
+                        <asp:GridView ID="gvRegistroAEliminar" runat="server" AutoGenerateColumns="False" BorderStyle="None">
+                            <Columns>
+                                <asp:BoundField AccessibleHeaderText="ID" DataField="IdSucursal" HeaderText="ID" />
+                                <asp:BoundField AccessibleHeaderText="Nombre" DataField="NombreSucursal" HeaderText="Nombre" />
+                                <asp:BoundField AccessibleHeaderText="Descripción" DataField="DescripcionSucursal" HeaderText="Descripción" />
+                                <asp:BoundField AccessibleHeaderText="Provincia" DataField="ProvinciaSucursal" HeaderText="Provincia" />
+                                <asp:BoundField AccessibleHeaderText="Dirección" DataField="DireccionSucursal" HeaderText="Dirección" />
+                            </Columns>
+                        </asp:GridView>
+                    </td>
                     <td class="auto-style24">&nbsp;</td>
                     <td class="auto-style19">&nbsp;</td>
                     <td class="auto-style20">&nbsp;</td>
@@ -173,7 +199,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style10"></td>
-                    <td class="auto-style11"></td>
+                    <td class="auto-style34"></td>
                     <td class="auto-style21"></td>
                     <td class="auto-style22"></td>
                     <td class="auto-style14"></td>
@@ -181,6 +207,7 @@
                     <td class="auto-style15"></td>
                 </tr>
                 </table>
+        </div>
                 <asp:Panel ID="pnlConfirmacion" runat="server" Visible="false" CssClass="emergente">
                     <div class="content">
                         <asp:Label ID="lblConfirmacion" runat="server" />
@@ -191,7 +218,6 @@
                         </div>
                     </div>
                 </asp:Panel>
-        </div>
     </form>
 </body>
 </html>

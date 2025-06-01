@@ -50,7 +50,7 @@ namespace Datos
                 cmd.Parameters.AddWithValue("@IdSucursal", IdSucursal);
                 con.Open();
                 SqlDataReader reader = cmd.ExecuteReader();
-                while (reader.Read())
+                if (reader.Read())
                 {
                     Sucursal sucursal = new Sucursal
                     {
@@ -61,8 +61,9 @@ namespace Datos
                         DireccionSucursal = Convert.ToString(reader["DIRECCIÓN"]),
                     };
                     suc = sucursal;
+                    return suc;
                 }
-                return suc;
+                return null;
 
 
             }

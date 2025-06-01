@@ -60,6 +60,7 @@ namespace Vistas
                 txbEliminarSucursal.Text = "";
                 sucursalManager.DeleteSucursal(idSucursal);
                 btnConfirmar.CommandArgument = "null";
+                limpiarTabla();
             }
         }
         protected void btnCancelar_Click(object sender, EventArgs e)
@@ -67,6 +68,42 @@ namespace Vistas
             pnlConfirmacion.Visible = false;
             txbEliminarSucursal.Text = "";
             btnConfirmar.CommandArgument = "null";
+            limpiarTabla();
+        }
+        protected void txbEliminarSucursal_TextChanged(object sender, EventArgs e)
+        {
+
+            int idInput;
+            if (int.TryParse(txbEliminarSucursal.Text, out idInput) && idInput > 0)
+            {
+                try
+                {
+                    Sucursal suc = sucursalManager.GetSucursalID(idInput);
+
+                    if (suc != null)
+                    {
+                        gvRegistroAEliminar.DataSource = new List<Sucursal> { suc };
+                        gvRegistroAEliminar.DataBind();
+                    }
+                    else
+                    {
+                        limpiarTabla();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    limpiarTabla();
+                }
+            }
+            else
+            {
+                limpiarTabla();
+            }
+        }
+        protected void limpiarTabla()
+        {
+            gvRegistroAEliminar.DataSource = null;
+            gvRegistroAEliminar.DataBind();
         }
     }
 }
