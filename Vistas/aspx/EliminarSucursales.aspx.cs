@@ -48,18 +48,7 @@ namespace Vistas
         {
             if (int.TryParse(txbEliminarSucursal.Text, out int id))
             {
-                //lblComprobarSucursal.Visible = true; //esta linea es solamente para que funcione el progrma luego hay que eliminarla
-               /* if (sucursalManager.SucursalExists(id))
-                {
-                    lblComprobarSucursal.Visible = true;
-                    lblEliminado.Visible = false;
-                    lblError.Visible = false;
-                    lblErrorFormato.Visible = false;
-                }
-                else
-                {
-                    lblComprobarSucursal.Visible = false;
-                }*/
+                
             }
         }
         protected void btnConfirmar_Click(object sender, EventArgs e)

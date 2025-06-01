@@ -39,7 +39,7 @@ namespace Vistas
             lblInvalidInputSuc.Visible = false;
 
             int idInput;
-            if (int.TryParse(txbIdSucursal.Text, out idInput))
+            if (int.TryParse(txbIdSucursal.Text, out idInput) && idInput > 0)
             {
                 try
                 {
@@ -67,8 +67,7 @@ namespace Vistas
         
         protected void btnMostrarTodos_Click(object sender, EventArgs e)
         {
-            txbIdSucursal.Text = "";
-            //Orden = 0;
+            LoadSucursales();
         } 
         protected void sortList(object sender, EventArgs e)
         {
