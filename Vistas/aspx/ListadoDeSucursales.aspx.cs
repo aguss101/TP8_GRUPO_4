@@ -37,6 +37,7 @@ namespace Vistas
         protected void btnFiltrar_Click(object sender, EventArgs e)
         {
             lblInvalidInputSuc.Visible = false;
+            gvSucursales.Visible = false;
 
             int idInput;
             if (int.TryParse(txbIdSucursal.Text, out idInput) && idInput > 0)
@@ -46,35 +47,42 @@ namespace Vistas
                     Sucursal suc = sucursalmanager.GetSucursalID(idInput);
                     gvSucursales.DataSource = new List<Sucursal> { suc };
                     gvSucursales.DataBind();
+                    gvSucursales.Visible = true;
                 }
                 catch (Exception ex)
                 {
-                    lblInvalidInputSuc.Text = "Error al filtrar sucursales: " + ex.Message;
+                    lblInvalidInputSuc.Text = "Ese ID de sucursal no existe.";
                     lblInvalidInputSuc.Visible = true;
                 }
             }
             else
             {
+                lblInvalidInputSuc.Text = "Valor inválido, ingrese un número!";
                 lblInvalidInputSuc.Visible = true;
             }
+
             txbIdSucursal.Text = "";
         }
-        
+
+
         protected void btnOrdenarSucursales(object sender, EventArgs e)
         {
+            lblInvalidInputSuc.Visible = false;
             pnlOrden.Visible = true;
         }
         
         protected void btnMostrarTodos_Click(object sender, EventArgs e)
         {
+            gvSucursales.Visible = true;
+            lblInvalidInputSuc.Visible = false;
             LoadSucursales();
-        } 
+        }
         protected void sortList(object sender, EventArgs e)
         {
             pnlOrden.Visible = false;
             List<Sucursal> list = sucursalmanager.GetSucursales();
 
-            if(sender is Button btn)
+            if (sender is Button btn)
             {
                 switch (btn.CommandArgument.ToString())
                 {
@@ -88,11 +96,17 @@ namespace Vistas
                         list = list.OrderBy(s => s.ProvinciaSucursal).ToList();
                         break;
                     case "CANCELAR":
+                        desfiltrarTabla(list);
                         return;
                 }
-                gvSucursales.DataSource = list;
-                gvSucursales.DataBind();
+                desfiltrarTabla(list);
             }
         }
+        protected void desfiltrarTabla(List<Sucursal> list)
+        {
+            gvSucursales.Visible = true;
+            gvSucursales.DataSource = list;
+            gvSucursales.DataBind();
+        }
     }
-    }
+}
