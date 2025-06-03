@@ -13,8 +13,9 @@ namespace Entidades
         public string DireccionSucursal { get; set; }
         public string DescripcionSucursal { get; set; }
         public int idProvinciaSucursal { get; set; }
-
         public string ProvinciaSucursal { get; set; }
+        public int? idHorarioSucursal { get; set; }
+        public string DescripcionHorario { get; set; }
 
     }
 }

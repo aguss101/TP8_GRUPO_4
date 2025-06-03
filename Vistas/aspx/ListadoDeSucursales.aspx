@@ -30,9 +30,6 @@
         .auto-style10 {
             height: 163px;
         }
-        .auto-style12 {
-            height: 163px;
-        }
         .auto-style14 {
             height: 46px;
         }
@@ -91,6 +88,14 @@
             width: 100%;
             margin-top: 10px;
         }
+        .auto-style29 {
+            margin-right: 26px;
+            font-size: 11px;
+        }
+        .auto-style30 {
+            height: 55px;
+            width: 10px;
+        }
     </style>
 </head>
 <body>
@@ -111,7 +116,7 @@
                 </td>
                 <td class="auto-style17">&nbsp;</td>
                 <td class="auto-style17"></td>
-                <td class="auto-style17"></td>
+                <td class="auto-style30"></td>
             </tr>
             <tr>
                 <td class="auto-style14" colspan="5">
@@ -150,18 +155,19 @@
                 <td class="auto-style8" colspan="2">
                     <asp:Label ID="lblInvalidInputSuc" runat="server" ForeColor="Red" Text="Valor inválido, ingrese un número!" Visible="False"></asp:Label>
                 </td>
-                <td class="auto-style9" colspan="2">&nbsp;</td>
+                <td class="auto-style9" colspan="2"></td>
                 <td class="auto-style9"></td>
             </tr>
             <tr>
                 <td class="auto-style19" colspan="4">
-                    <asp:GridView ID="gvSucursales" runat="server" Width="966px" style="margin-left: 0px" AutoGenerateColumns="False" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal">
+                    <asp:GridView ID="gvSucursales" runat="server" Width="966px" style="margin-left: 0px" AutoGenerateColumns="False" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" CssClass="auto-style29">
                         <Columns>
                             <asp:BoundField AccessibleHeaderText="ID" DataField="IdSucursal" HeaderText="ID" />
                             <asp:BoundField AccessibleHeaderText="Nombre" DataField="NombreSucursal" HeaderText="Nombre" />
                             <asp:BoundField AccessibleHeaderText="Descripcion" DataField="DescripcionSucursal" HeaderText="Descripcion" />
                             <asp:BoundField AccessibleHeaderText="Provincia" DataField="ProvinciaSucursal" HeaderText="Provincia" />
                             <asp:BoundField AccessibleHeaderText="Direccion" DataField="DireccionSucursal" HeaderText="Direccion" />
+                            <asp:BoundField AccessibleHeaderText="Horario" DataField="DescripcionHorario" HeaderText="Horario" />
                         </Columns>
                         <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
                         <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />

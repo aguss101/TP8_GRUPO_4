@@ -82,6 +82,7 @@ namespace Vistas
 
                     if (suc != null)
                     {
+                        lblError.Visible = false;
                         gvRegistroAEliminar.DataSource = new List<Sucursal> { suc };
                         gvRegistroAEliminar.DataBind();
                     }

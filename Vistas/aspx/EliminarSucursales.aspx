@@ -158,7 +158,7 @@
                         <asp:Label ID="Label1" runat="server" Text="Ingresar ID sucursal:"></asp:Label>
                     </td>
                     <td class="auto-style9" colspan="4">
-                        <asp:TextBox ID="txbEliminarSucursal" runat="server" Width="306px" ValidationGroup="Group2" OnTextChanged="txbEliminarSucursal_TextChanged" AutoPostBack="true"></asp:TextBox>
+                        <asp:TextBox ID="txbEliminarSucursal" runat="server" Width="306px" ValidationGroup="Group2" OnTextChanged="txbEliminarSucursal_TextChanged" AutoPostBack="True"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <asp:Button ID="btnEliminarSucursal" runat="server" Text="Eliminar" OnClick="btnEliminarSucursal_Click" ValidationGroup="Group2" />
                     &nbsp;&nbsp;<asp:Label ID="lblError" runat="server" ForeColor="Red" Text="Ingrese un numero de sucursal valido" Visible="False"></asp:Label>
@@ -189,6 +189,7 @@
                                 <asp:BoundField AccessibleHeaderText="Descripción" DataField="DescripcionSucursal" HeaderText="Descripción" />
                                 <asp:BoundField AccessibleHeaderText="Provincia" DataField="ProvinciaSucursal" HeaderText="Provincia" />
                                 <asp:BoundField AccessibleHeaderText="Dirección" DataField="DireccionSucursal" HeaderText="Dirección" />
+                                <asp:BoundField AccessibleHeaderText="Horario" DataField="DescripcionHorario" HeaderText="Horario" />
                             </Columns>
                         </asp:GridView>
                     </td>

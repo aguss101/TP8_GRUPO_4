@@ -147,6 +147,48 @@
             width: 8%;
             height: 44px;
         }
+        .auto-style71 {
+            width: 6%;
+            height: 23px;
+        }
+        .auto-style72 {
+            height: 23px;
+        }
+        .auto-style73 {
+            width: 119px;
+            height: 23px;
+        }
+        .auto-style74 {
+            width: 9%;
+            height: 23px;
+        }
+        .auto-style75 {
+            width: 10%;
+            height: 23px;
+        }
+        .auto-style76 {
+            width: 8%;
+            height: 23px;
+        }
+        .auto-style77 {
+            width: 6%;
+            height: 42px;
+        }
+        .auto-style78 {
+            height: 42px;
+        }
+        .auto-style79 {
+            width: 119px;
+            height: 42px;
+        }
+        .auto-style80 {
+            width: 10%;
+            height: 42px;
+        }
+        .auto-style81 {
+            width: 8%;
+            height: 42px;
+        }
     </style>
 </head>
 <body>
@@ -262,31 +304,47 @@
                 <td class="auto-style58"></td>
             </tr>
             <tr>
-                <td class="auto-style18">&nbsp;</td>
-                <td class="auto-style19">
+                <td class="auto-style77"></td>
+                <td class="auto-style78">
                     <asp:Label ID="lblProv0" runat="server" Font-Bold="False" Font-Size="Large" Text="Direccion:"></asp:Label>
                 </td>
-                <td class="auto-style42" colspan="2">
+                <td class="auto-style79" colspan="2">
                     <asp:TextBox ID="txtDir" runat="server" MaxLength="100" Width="271px" ValidationGroup="Group1"></asp:TextBox>
                 </td>
-                <td class="auto-style19" colspan="2">
+                <td class="auto-style78" colspan="2">
                     <asp:RequiredFieldValidator ID="rfvDireccion" runat="server" ControlToValidate="txtDir" ErrorMessage="Ingrese la dirección de la sucursal" ForeColor="Red" ValidationGroup="Group1"></asp:RequiredFieldValidator>
                 </td>
-                <td class="auto-style49">&nbsp;</td>
-                <td class="auto-style21">&nbsp;</td>
-                <td class="auto-style21">&nbsp;</td>
-                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style80"></td>
+                <td class="auto-style81"></td>
+                <td class="auto-style81"></td>
+                <td class="auto-style81"></td>
             </tr>
             <tr>
-                <td class="auto-style18">&nbsp;</td>
-                <td class="auto-style19">&nbsp;</td>
-                <td class="auto-style42" colspan="2">&nbsp;</td>
-                <td class="auto-style19">&nbsp;</td>
-                <td class="auto-style46">&nbsp;</td>
-                <td class="auto-style49">&nbsp;</td>
-                <td class="auto-style21">&nbsp;</td>
-                <td class="auto-style21">&nbsp;</td>
-                <td class="auto-style21">&nbsp;</td>
+                <td class="auto-style71"></td>
+                <td class="auto-style54">
+                    <asp:Label ID="lblHorario" runat="server" Font-Size="Large" Text="Horario:"></asp:Label>
+                </td>
+                <td class="auto-style73" colspan="2">
+                    <asp:DropDownList ID="ddlHorario" runat="server" AutoPostBack="True" Height="26px" Width="278px">
+                    </asp:DropDownList>
+                </td>
+                <td class="auto-style72">&nbsp;</td>
+                <td class="auto-style74"></td>
+                <td class="auto-style75"></td>
+                <td class="auto-style76"></td>
+                <td class="auto-style76"></td>
+                <td class="auto-style76"></td>
+            </tr>
+            <tr>
+                <td class="auto-style71">&nbsp;</td>
+                <td class="auto-style72">&nbsp;</td>
+                <td class="auto-style73" colspan="2">&nbsp;</td>
+                <td class="auto-style72">&nbsp;</td>
+                <td class="auto-style74">&nbsp;</td>
+                <td class="auto-style75">&nbsp;</td>
+                <td class="auto-style76">&nbsp;</td>
+                <td class="auto-style76">&nbsp;</td>
+                <td class="auto-style76">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style18">&nbsp;</td>

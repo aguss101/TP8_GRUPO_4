@@ -24,6 +24,10 @@ namespace Negocio
             return sucursalData.GetSucursalProvincias();
 
         }
+        public List<String> GetSucursalHorarios()
+        {
+            return sucursalData.GetSucursalHorario();
+        }
         public void AddSucursal(Sucursal sucursal)
         {
             sucursalData.AddSucursal(sucursal);

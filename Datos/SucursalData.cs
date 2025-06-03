@@ -14,7 +14,7 @@ namespace Datos
         {
             List<Sucursal> sucursales = new List<Sucursal>();
 
-            string querySQL = "SELECT Id_Sucursal AS ID, NombreSucursal AS NOMBRE, DescripcionSucursal AS DESCRIPCION, DescripcionProvincia AS PROVINCIA,DireccionSucursal AS DIRECCIÓN FROM Sucursal INNER JOIN Provincia ON Id_Provincia=Id_ProvinciaSucursal ";
+            string querySQL = "SELECT Id_Sucursal AS ID, NombreSucursal AS NOMBRE, DescripcionSucursal AS DESCRIPCION, DescripcionProvincia AS PROVINCIA, DireccionSucursal AS DIRECCIÓN, ISNULL(DescripcionHorario, 'Sin horario') AS HORARIO FROM Sucursal LEFT JOIN Horario ON Id_HorarioSucursal=Id_Horario INNER JOIN Provincia ON Id_Provincia=Id_ProvinciaSucursal";
 
             using (SqlConnection con = conexion.GetConnection())
             {
@@ -30,6 +30,7 @@ namespace Datos
                         DescripcionSucursal = Convert.ToString(reader["DESCRIPCION"]),
                         ProvinciaSucursal = Convert.ToString(reader["PROVINCIA"]),
                         DireccionSucursal = Convert.ToString(reader["DIRECCIÓN"]),
+                        DescripcionHorario = Convert.ToString(reader["HORARIO"])
                     };
                     sucursales.Add(sucursal);
                 }
@@ -41,7 +42,7 @@ namespace Datos
         public Sucursal GetSucursalID(int IdSucursal)
         {
 
-            string querySQL = "SELECT Id_Sucursal AS ID, NombreSucursal AS NOMBRE, DescripcionSucursal AS DESCRIPCION, DescripcionProvincia AS PROVINCIA,DireccionSucursal AS DIRECCIÓN FROM Sucursal INNER JOIN Provincia ON Id_Provincia=Id_ProvinciaSucursal WHERE Id_Sucursal = @IdSucursal";
+            string querySQL = "SELECT Id_Sucursal AS ID, NombreSucursal AS NOMBRE, DescripcionSucursal AS DESCRIPCION, DescripcionProvincia AS PROVINCIA, DireccionSucursal AS DIRECCIÓN, ISNULL(DescripcionHorario, 'Sin horario') AS HORARIO FROM Sucursal LEFT JOIN Horario ON Id_HorarioSucursal=Id_Horario INNER JOIN Provincia ON Id_Provincia=Id_ProvinciaSucursal WHERE Id_Sucursal = @IdSucursal";
 
             using (SqlConnection con = conexion.GetConnection())
             {
@@ -59,6 +60,7 @@ namespace Datos
                         DescripcionSucursal = Convert.ToString(reader["DESCRIPCION"]),
                         ProvinciaSucursal = Convert.ToString(reader["PROVINCIA"]),
                         DireccionSucursal = Convert.ToString(reader["DIRECCIÓN"]),
+                        DescripcionHorario = Convert.ToString(reader["HORARIO"])
                     };
                     suc = sucursal;
                     return suc;
@@ -85,8 +87,8 @@ namespace Datos
         }
         public void AddSucursal(Sucursal sucursal)
         {
-            string querysql = @"INSERT INTO Sucursal (NombreSucursal, DescripcionSucursal, DireccionSucursal, Id_ProvinciaSucursal)
-                        VALUES (@nombre, @descripcion, @direccion, @Id_ProvinciaSucursal)";
+            string querysql = @"INSERT INTO Sucursal (NombreSucursal, DescripcionSucursal, DireccionSucursal, Id_ProvinciaSucursal, Id_HorarioSucursal)
+                        VALUES (@nombre, @descripcion, @direccion, @Id_ProvinciaSucursal, @Id_HorarioSucursal)";
 
             using (SqlConnection con = conexion.GetConnection())
             {
@@ -96,6 +98,7 @@ namespace Datos
                     cmd.Parameters.AddWithValue("@descripcion", sucursal.DescripcionSucursal);
                     cmd.Parameters.AddWithValue("@direccion", sucursal.DireccionSucursal);
                     cmd.Parameters.AddWithValue("@Id_ProvinciaSucursal", sucursal.idProvinciaSucursal);
+                    cmd.Parameters.AddWithValue("@Id_HorarioSucursal", sucursal.idHorarioSucursal.HasValue ? (object)sucursal.idHorarioSucursal.Value : DBNull.Value);
 
                     con.Open();
                     cmd.ExecuteNonQuery();
@@ -118,6 +121,23 @@ namespace Datos
                 }
             }
             return provincias;
+        }
+
+        public List<string> GetSucursalHorario()
+        {
+            List<string> horarios = new List<string>();
+            string querySQL = "SELECT DescripcionHorario FROM Horario";
+            using (SqlConnection con = conexion.GetConnection())
+            {
+                SqlCommand cmd = new SqlCommand(querySQL, con);
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    horarios.Add(Convert.ToString(reader["DescripcionHorario"]));
+                }
+            }
+            return horarios;
         }
 
         public bool Exists(int idSucursal)
