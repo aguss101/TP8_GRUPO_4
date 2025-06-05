@@ -37,7 +37,7 @@ namespace Vistas
         protected void btnFiltrar_Click(object sender, EventArgs e)
         {
             lblInvalidInputSuc.Visible = false;
-            gvSucursales.Visible = false;
+            gvSucursales.Visible = true;
 
             int idInput;
             if (int.TryParse(txbIdSucursal.Text, out idInput) && idInput > 0)

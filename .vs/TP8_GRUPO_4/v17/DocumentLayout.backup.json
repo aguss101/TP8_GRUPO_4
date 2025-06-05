@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\agusp\\Downloads\\Git\\TP8_GRUPO_4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{93C34AEA-AB40-4CCB-8EC7-6DED5963B68F}|Vistas\\Vistas.csproj|c:\\users\\agusp\\downloads\\git\\tp8_grupo_4\\vistas\\aspx\\agregarsucursal.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93C34AEA-AB40-4CCB-8EC7-6DED5963B68F}|Vistas\\Vistas.csproj|solutionrelative:vistas\\aspx\\agregarsucursal.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{93C34AEA-AB40-4CCB-8EC7-6DED5963B68F}|Vistas\\Vistas.csproj|c:\\users\\agusp\\downloads\\git\\tp8_grupo_4\\vistas\\aspx\\listadodesucursales.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93C34AEA-AB40-4CCB-8EC7-6DED5963B68F}|Vistas\\Vistas.csproj|solutionrelative:vistas\\aspx\\listadodesucursales.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{93C34AEA-AB40-4CCB-8EC7-6DED5963B68F}|Vistas\\Vistas.csproj|c:\\users\\agusp\\downloads\\git\\tp8_grupo_4\\vistas\\aspx\\agregarsucursal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{93C34AEA-AB40-4CCB-8EC7-6DED5963B68F}|Vistas\\Vistas.csproj|solutionrelative:vistas\\aspx\\agregarsucursal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{93C34AEA-AB40-4CCB-8EC7-6DED5963B68F}|Vistas\\Vistas.csproj|c:\\users\\agusp\\downloads\\git\\tp8_grupo_4\\vistas\\aspx\\eliminarsucursales.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93C34AEA-AB40-4CCB-8EC7-6DED5963B68F}|Vistas\\Vistas.csproj|solutionrelative:vistas\\aspx\\eliminarsucursales.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{93C34AEA-AB40-4CCB-8EC7-6DED5963B68F}|Vistas\\Vistas.csproj|c:\\users\\agusp\\downloads\\git\\tp8_grupo_4\\vistas\\aspx\\listadodesucursales.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{93C34AEA-AB40-4CCB-8EC7-6DED5963B68F}|Vistas\\Vistas.csproj|solutionrelative:vistas\\aspx\\listadodesucursales.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,40 +35,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AgregarSucursal.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\agusp\\Downloads\\Git\\TP8_GRUPO_4\\Vistas\\aspx\\AgregarSucursal.aspx.cs",
-              "RelativeDocumentMoniker": "Vistas\\aspx\\AgregarSucursal.aspx.cs",
-              "ToolTip": "C:\\Users\\agusp\\Downloads\\Git\\TP8_GRUPO_4\\Vistas\\aspx\\AgregarSucursal.aspx.cs",
-              "RelativeToolTip": "Vistas\\aspx\\AgregarSucursal.aspx.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAwwCkAAAAXAAAAAAAAAA==",
+              "Title": "ListadoDeSucursales.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\agusp\\Downloads\\Git\\TP8_GRUPO_4\\Vistas\\aspx\\ListadoDeSucursales.aspx.cs",
+              "RelativeDocumentMoniker": "Vistas\\aspx\\ListadoDeSucursales.aspx.cs",
+              "ToolTip": "C:\\Users\\agusp\\Downloads\\Git\\TP8_GRUPO_4\\Vistas\\aspx\\ListadoDeSucursales.aspx.cs*",
+              "RelativeToolTip": "Vistas\\aspx\\ListadoDeSucursales.aspx.cs*",
+              "ViewState": "AgIAACAAAAAAAAAAAAAwwCYAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T17:50:28.288Z",
+              "WhenOpened": "2025-06-05T01:25:56.493Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AgregarSucursal.aspx",
-              "DocumentMoniker": "C:\\Users\\agusp\\Downloads\\Git\\TP8_GRUPO_4\\Vistas\\aspx\\AgregarSucursal.aspx",
-              "RelativeDocumentMoniker": "Vistas\\aspx\\AgregarSucursal.aspx",
-              "ToolTip": "C:\\Users\\agusp\\Downloads\\Git\\TP8_GRUPO_4\\Vistas\\aspx\\AgregarSucursal.aspx",
-              "RelativeToolTip": "Vistas\\aspx\\AgregarSucursal.aspx",
+              "Title": "ListadoDeSucursales.aspx",
+              "DocumentMoniker": "C:\\Users\\agusp\\Downloads\\Git\\TP8_GRUPO_4\\Vistas\\aspx\\ListadoDeSucursales.aspx",
+              "RelativeDocumentMoniker": "Vistas\\aspx\\ListadoDeSucursales.aspx",
+              "ToolTip": "C:\\Users\\agusp\\Downloads\\Git\\TP8_GRUPO_4\\Vistas\\aspx\\ListadoDeSucursales.aspx",
+              "RelativeToolTip": "Vistas\\aspx\\ListadoDeSucursales.aspx",
               "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-05-31T17:50:16.795Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EliminarSucursales.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\agusp\\Downloads\\Git\\TP8_GRUPO_4\\Vistas\\aspx\\EliminarSucursales.aspx.cs",
-              "RelativeDocumentMoniker": "Vistas\\aspx\\EliminarSucursales.aspx.cs",
-              "ToolTip": "C:\\Users\\agusp\\Downloads\\Git\\TP8_GRUPO_4\\Vistas\\aspx\\EliminarSucursales.aspx.cs",
-              "RelativeToolTip": "Vistas\\aspx\\EliminarSucursales.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T01:20:12.665Z",
+              "WhenOpened": "2025-06-05T01:25:38.982Z",
               "EditorCaption": ""
             }
           ]
